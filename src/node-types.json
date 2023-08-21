@@ -519,11 +519,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "types": [
         {
-          "type": "_statement",
+          "type": "statement_list",
           "named": true
         }
       ]
@@ -616,11 +616,11 @@
       }
     },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "types": [
         {
-          "type": "_statement",
+          "type": "statement_list",
           "named": true
         }
       ]
@@ -770,11 +770,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "types": [
         {
-          "type": "_statement",
+          "type": "statement_list",
           "named": true
         }
       ]
@@ -821,11 +821,11 @@
       }
     },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "types": [
         {
-          "type": "_statement",
+          "type": "statement_list",
           "named": true
         }
       ]
@@ -2067,6 +2067,21 @@
     }
   },
   {
+    "type": "statement_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "struct_elem",
     "named": true,
     "fields": {},
@@ -2198,11 +2213,11 @@
       }
     },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "types": [
         {
-          "type": "_statement",
+          "type": "statement_list",
           "named": true
         }
       ]

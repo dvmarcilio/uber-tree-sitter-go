@@ -26,7 +26,7 @@ func main() {
   (function_declaration
     (identifier)
     (parameter_list)
-    (block
+    (block (statement_list
       (expression_statement
         (call_expression
           (identifier)
@@ -46,7 +46,7 @@ func main() {
           (argument_list
             (identifier)
             (variadic_argument
-              (identifier))))))))
+              (identifier)))))))))
 
 ================================================================================
 Nested call expressions
@@ -66,7 +66,7 @@ func main() {
   (function_declaration
     (identifier)
     (parameter_list)
-    (block
+    (block (statement_list
       (expression_statement
         (call_expression
           (identifier)
@@ -77,7 +77,7 @@ func main() {
                 (call_expression
                   (identifier)
                   (argument_list
-                    (identifier)))))))))))
+                    (identifier))))))))))))
 
 ================================================================================
 Generic call expressions
@@ -99,7 +99,7 @@ func main() {
   (function_declaration
     (identifier)
     (parameter_list)
-    (block
+    (block (statement_list
       (expression_statement
         (call_expression
           (identifier)
@@ -127,7 +127,7 @@ func main() {
           (argument_list
             (index_expression
               (identifier)
-              (identifier))))))))
+              (identifier)))))))))
 
 ================================================================================
 Calls to 'make' and 'new'
@@ -153,7 +153,7 @@ func main() {
   (function_declaration
     (identifier)
     (parameter_list)
-    (block
+    (block (statement_list
       (expression_statement
         (call_expression
           (identifier)
@@ -188,7 +188,7 @@ func main() {
           (argument_list
             (map_type
               (type_identifier)
-              (type_identifier))))))))
+              (type_identifier)))))))))
 
 ================================================================================
 Selector expressions
@@ -208,7 +208,7 @@ func main() {
   (function_declaration
     (identifier)
     (parameter_list)
-    (block
+    (block (statement_list
       (expression_statement
         (call_expression
           (selector_expression
@@ -216,7 +216,7 @@ func main() {
               (identifier)
               (field_identifier))
             (field_identifier))
-          (argument_list))))))
+          (argument_list)))))))
 
 ================================================================================
 Indexing expressions
@@ -241,7 +241,7 @@ func main() {
   (function_declaration
     (identifier)
     (parameter_list)
-    (block
+    (block (statement_list
       (assignment_statement
         (expression_list
           (identifier))
@@ -286,7 +286,7 @@ func main() {
             (identifier)
             (int_literal)
             (int_literal)
-            (int_literal)))))))
+            (int_literal))))))))
 
 ================================================================================
 Type assertion expressions
@@ -306,7 +306,7 @@ func main() {
   (function_declaration
     (identifier)
     (parameter_list)
-    (block
+    (block (statement_list
       (assignment_statement
         (expression_list
           (identifier))
@@ -315,7 +315,7 @@ func main() {
             (identifier)
             (qualified_type
               (package_identifier)
-              (type_identifier))))))))
+              (type_identifier)))))))))
 
 ================================================================================
 Type conversion expressions
@@ -343,7 +343,7 @@ func main() {
   (function_declaration
     (identifier)
     (parameter_list)
-    (block
+    (block (statement_list
       (assignment_statement
         (expression_list
           (identifier))
@@ -413,7 +413,7 @@ func main() {
               (identifier)
               (field_identifier)))
           (argument_list
-            (identifier)))))))
+            (identifier))))))))
 
 ================================================================================
 Unary expressions
@@ -434,7 +434,7 @@ func main() {
   (function_declaration
     (identifier)
     (parameter_list)
-    (block
+    (block (statement_list
       (assignment_statement
         (expression_list
           (identifier))
@@ -449,4 +449,4 @@ func main() {
           (unary_expression
             (call_expression
               (identifier)
-              (argument_list))))))))
+              (argument_list)))))))))
